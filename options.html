@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image AI Detector - Settings</title>
+    <style>
+      body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial; margin: 0; padding: 24px; max-width: 720px; }
+      h1 { font-size: 18px; margin: 0 0 4px; }
+      p { color: #4b5563; margin: 0 0 16px; }
+      label { display: block; font-weight: 600; margin-top: 12px; margin-bottom: 6px; }
+      input { width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px; }
+      .row { display: flex; gap: 8px; margin-top: 12px; }
+      button { padding: 10px 14px; border: 0; border-radius: 8px; color: white; background: linear-gradient(135deg, #2563eb, #7c3aed); font-weight: 600; cursor: pointer; }
+      .muted { color: #6b7280; font-size: 12px; margin-top: 6px; }
+      .status { margin-top: 10px; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <h1>Settings</h1>
+    <p>Configure a custom API endpoint to classify images. If left empty, a local mock will be used.</p>
+
+    <label for="apiUrl">API URL</label>
+    <input id="apiUrl" type="url" placeholder="https://your-api.example.com/classify" />
+
+    <label for="apiKey">API Key (optional)</label>
+    <input id="apiKey" type="text" placeholder="Paste key if required" />
+
+    <div class="row">
+      <button id="save">Save</button>
+      <button id="test">Test API</button>
+    </div>
+
+    <div class="status" id="status"></div>
+
+    <div class="muted">Expected request body: { imageUrl: string }. Expected response: { label: 'ai'|'real', confidence: number }.</div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

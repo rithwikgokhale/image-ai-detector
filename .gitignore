@@ -1,0 +1,17 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+*.log
+/.env
+/.env.*
+dist/
+build/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.local
+*.swp
+
+

@@ -1,0 +1,8 @@
+/* Minimal styles reserved for future extension; most styles inline for positioning correctness */
+.image-ai-detector-overlay {
+  transition: box-shadow 200ms ease;
+}
+
+.image-ai-detector-badge {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
