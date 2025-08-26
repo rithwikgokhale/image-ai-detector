@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="step1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="step2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="step3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="step4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="300" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Getting Started in 4 Easy Steps</text>
+  
+  <!-- Step 1 -->
+  <circle cx="80" cy="80" r="25" fill="url(#step1)" stroke="#1e40af" stroke-width="2"/>
+  <text x="80" y="87" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">1</text>
+  <text x="150" y="75" font-family="Arial, sans-serif" font-size="14" fill="#1e293b" font-weight="bold">Install Extension</text>
+  <text x="150" y="90" font-family="Arial, sans-serif" font-size="12" fill="#64748b">From Chrome Web Store</text>
+  
+  <!-- Step 2 -->
+  <circle cx="80" cy="140" r="25" fill="url(#step2)" stroke="#047857" stroke-width="2"/>
+  <text x="80" y="147" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">2</text>
+  <text x="150" y="135" font-family="Arial, sans-serif" font-size="14" fill="#1e293b" font-weight="bold">Visit Any Webpage</text>
+  <text x="150" y="150" font-family="Arial, sans-serif" font-size="12" fill="#64748b">With images to analyze</text>
+  
+  <!-- Step 3 -->
+  <circle cx="80" cy="200" r="25" fill="url(#step3)" stroke="#b91c1c" stroke-width="2"/>
+  <text x="80" y="207" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">3</text>
+  <text x="150" y="195" font-family="Arial, sans-serif" font-size="14" fill="#1e293b" font-weight="bold">Click Extension Icon</text>
+  <text x="150" y="210" font-family="Arial, sans-serif" font-size="12" fill="#64748b">In your browser toolbar</text>
+  
+  <!-- Step 4 -->
+  <circle cx="80" cy="260" r="25" fill="url(#step4)" stroke="#6d28d9" stroke-width="2"/>
+  <text x="80" y="267" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">4</text>
+  <text x="150" y="255" font-family="Arial, sans-serif" font-size="14" fill="#1e293b" font-weight="bold">See Instant Results</text>
+  <text x="150" y="270" font-family="Arial, sans-serif" font-size="12" fill="#64748b">AI/Real labels appear</text>
+  
+  <!-- Arrows -->
+  <path d="M 80 105 L 80 115" stroke="#64748b" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 80 165 L 80 175" stroke="#64748b" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 80 225 L 80 235" stroke="#64748b" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <!-- Result example -->
+  <rect x="320" y="60" width="160" height="180" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="400" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#475569" font-weight="bold">Example Results</text>
+  
+  <!-- Sample image with labels -->
+  <rect x="340" y="100" width="120" height="80" rx="5" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="400" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">📸 Image</text>
+  
+  <!-- AI Label -->
+  <rect x="340" y="190" width="50" height="20" rx="10" fill="#dc2626" stroke="#b91c1c" stroke-width="1"/>
+  <text x="365" y="203" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">AI</text>
+  
+  <!-- Real Label -->
+  <rect x="410" y="190" width="50" height="20" rx="10" fill="#059669" stroke="#047857" stroke-width="1"/>
+  <text x="435" y="203" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">Real</text>
+  
+  <!-- Confidence -->
+  <text x="400" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Confidence: 87%</text>
+</svg>

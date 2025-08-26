@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">Image AI Detector Workflow</text>
+  
+  <!-- User -->
+  <rect x="50" y="80" width="120" height="60" rx="10" fill="url(#grad1)" stroke="#1e40af" stroke-width="2"/>
+  <text x="110" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">User</text>
+  <text x="110" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Clicks Extension</text>
+  
+  <!-- Chrome Extension -->
+  <rect x="220" y="80" width="120" height="60" rx="10" fill="url(#grad2)" stroke="#047857" stroke-width="2"/>
+  <text x="280" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">Chrome</text>
+  <text x="280" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Extension</text>
+  <text x="280" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Scans Page</text>
+  
+  <!-- Web Page -->
+  <rect x="390" y="80" width="120" height="60" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="450" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#475569" font-weight="bold">Web Page</text>
+  <text x="450" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Images Found</text>
+  <text x="450" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">📸 🤖</text>
+  
+  <!-- API Server -->
+  <rect x="560" y="80" width="120" height="60" rx="10" fill="url(#grad3)" stroke="#b91c1c" stroke-width="2"/>
+  <text x="620" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">ML API</text>
+  <text x="620" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Analyzes</text>
+  <text x="620" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Images</text>
+  
+  <!-- Arrows -->
+  <path d="M 170 110 L 220 110" stroke="#64748b" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 340 110 L 390 110" stroke="#64748b" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 510 110 L 560 110" stroke="#64748b" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Results Flow -->
+  <path d="M 620 140 L 620 200 L 280 200 L 280 140" stroke="#64748b" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Results Display -->
+  <rect x="220" y="220" width="120" height="60" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="280" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#92400e" font-weight="bold">Results</text>
+  <text x="280" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#a16207">AI/Real Labels</text>
+  <text x="280" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#a16207">Confidence Scores</text>
+  
+  <!-- Arrow to Results -->
+  <path d="M 280 140 L 280 220" stroke="#d97706" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <!-- Bottom section -->
+  <rect x="50" y="320" width="700" height="60" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="400" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#475569" font-weight="bold">Key Features</text>
+  <text x="400" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Real-time Analysis • Visual Overlays • Confidence Scores • Privacy-First</text>
+</svg>

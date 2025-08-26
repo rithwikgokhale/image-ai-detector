@@ -1,15 +1,15 @@
 <!doctype html>
 <html class="no-js" lang="en" data-content_root="./">
-  <head>
-<meta charset="utf-8"/>
+  <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="#" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Installation Guide" href="user-guide/installation.html" /><link rel="prev" title="Executive Summary" href="executive-summary.html" />
         <link rel="prefetch" href="_static/logo.png" as="image" />
         <link rel="prefetch" href="_static/logo.png" as="image" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2025.07.19 -->
-<meta name="robots" content="noindex" />
-<title>Search - Image AI Detector Documentation</title><link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+        <title>About the Project - Image AI Detector Documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
@@ -205,7 +205,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -221,16 +221,16 @@
   </div>
   
   
-</a><form class="sidebar-search-container" method="get" action="#" role="search">
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="executive-summary.html">Executive Summary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="about-project.html">About the Project</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">About the Project</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
 <ul>
@@ -271,7 +271,9 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          
+
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
@@ -280,31 +282,169 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          
-<noscript>
-<div class="admonition error">
-  <p class="admonition-title">Error</p>
-  <p>
-    Please activate JavaScript to enable the search functionality.
-  </p>
+          <section id="about-the-project">
+<h1>About the Project<a class="headerlink" href="#about-the-project" title="Link to this heading">¶</a></h1>
+<section id="what-is-image-ai-detector">
+<h2>What is Image AI Detector?<a class="headerlink" href="#what-is-image-ai-detector" title="Link to this heading">¶</a></h2>
+<p>Image AI Detector is a <strong>Chrome extension</strong> that helps you identify whether images you see online are <strong>real photographs</strong> or <strong>AI-generated content</strong>. Think of it as a “truth detector” for images - it analyzes pictures in real-time and tells you how likely they are to be created by artificial intelligence.</p>
+<a class="reference internal image-reference" href="_images/extension-overview.svg"><img alt="Chrome extension analyzing images on a webpage" class="align-center" src="_images/extension-overview.svg" style="width: 600px;" />
+</a>
+</section>
+<section id="why-this-matters">
+<h2>Why This Matters<a class="headerlink" href="#why-this-matters" title="Link to this heading">¶</a></h2>
+<p>In today’s digital world, <strong>AI-generated images</strong> are becoming increasingly sophisticated and widespread. From social media to news websites, it’s getting harder to distinguish between:</p>
+<ul class="simple">
+<li><p>📸 <strong>Real photographs</strong> taken by cameras</p></li>
+<li><p>🤖 <strong>AI-generated images</strong> created by tools like DALL-E, Midjourney, or Stable Diffusion</p></li>
+</ul>
+<p>This matters because:</p>
+<ul class="simple">
+<li><p><strong>Misinformation</strong>: AI images can be used to spread fake news</p></li>
+<li><p><strong>Trust</strong>: We need to know what’s real when making decisions</p></li>
+<li><p><strong>Transparency</strong>: Understanding what’s AI-generated helps us navigate the digital landscape</p></li>
+<li><p><strong>Education</strong>: Learning to spot AI content is becoming an essential skill</p></li>
+</ul>
+</section>
+<section id="how-it-works">
+<h2>How It Works<a class="headerlink" href="#how-it-works" title="Link to this heading">¶</a></h2>
+<p>The extension works like a smart assistant that:</p>
+<ol class="arabic simple">
+<li><p><strong>Scans the page</strong> when you click the extension icon</p></li>
+<li><p><strong>Analyzes each image</strong> using advanced computer vision techniques</p></li>
+<li><p><strong>Provides instant results</strong> with confidence scores</p></li>
+<li><p><strong>Shows detailed analysis</strong> of what it found</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>User clicks extension
+        ↓
+Extension scans page
+        ↓
+Finds all images
+        ↓
+Analyzes each image
+        ↓
+ML model processes image
+        ↓
+Returns AI/Real classification
+        ↓
+Shows results with confidence
+        ↓
+User sees labeled images
+</pre></div>
 </div>
-</noscript>
-
-<div id="search-results"></div>
+</section>
+<section id="key-features">
+<h2>Key Features<a class="headerlink" href="#key-features" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>✅ <strong>Real-time Analysis</strong></dt><dd><p>Instant results as you browse the web</p>
+</dd>
+<dt>✅ <strong>Visual Indicators</strong></dt><dd><p>Clear badges and overlays on images</p>
+</dd>
+<dt>✅ <strong>Confidence Scores</strong></dt><dd><p>Shows how certain the AI is about its classification</p>
+</dd>
+<dt>✅ <strong>Detailed Insights</strong></dt><dd><p>Explains what characteristics led to the classification</p>
+</dd>
+<dt>✅ <strong>Privacy-First</strong></dt><dd><p>Images are analyzed locally or through secure APIs</p>
+</dd>
+<dt>✅ <strong>Easy to Use</strong></dt><dd><p>One-click activation, no technical knowledge required</p>
+</dd>
+</dl>
+</section>
+<section id="who-should-use-this">
+<h2>Who Should Use This?<a class="headerlink" href="#who-should-use-this" title="Link to this heading">¶</a></h2>
+<p>🎯 <strong>Everyone who browses the web</strong> - From students to professionals</p>
+<p>🎯 <strong>Content creators</strong> - Verify the authenticity of images before sharing</p>
+<p>🎯 <strong>Journalists and researchers</strong> - Fact-check visual content</p>
+<p>🎯 <strong>Educators</strong> - Teach digital literacy and media awareness</p>
+<p>🎯 <strong>Social media users</strong> - Make informed decisions about what to share</p>
+<p>🎯 <strong>Business professionals</strong> - Ensure marketing materials are authentic</p>
+</section>
+<section id="technology-behind-the-scenes">
+<h2>Technology Behind the Scenes<a class="headerlink" href="#technology-behind-the-scenes" title="Link to this heading">¶</a></h2>
+<p>While the extension is simple to use, it’s powered by sophisticated technology:</p>
+<a class="reference internal image-reference" href="_images/tech-stack.svg"><img alt="Technology stack diagram" class="align-center" src="_images/tech-stack.svg" style="width: 500px;" />
+</a>
+<dl class="simple">
+<dt><strong>Machine Learning Models</strong></dt><dd><p>Advanced AI models trained to recognize patterns in images</p>
+</dd>
+<dt><strong>Computer Vision</strong></dt><dd><p>Technology that “sees” and analyzes visual content</p>
+</dd>
+<dt><strong>Real-time Processing</strong></dt><dd><p>Instant analysis without slowing down your browsing</p>
+</dd>
+<dt><strong>Secure APIs</strong></dt><dd><p>Professional-grade image analysis services</p>
+</dd>
+</dl>
+</section>
+<section id="privacy-security">
+<h2>Privacy &amp; Security<a class="headerlink" href="#privacy-security" title="Link to this heading">¶</a></h2>
+<p>🔒 <strong>Your privacy is protected</strong>:</p>
+<ul class="simple">
+<li><p>Images are analyzed securely through trusted APIs</p></li>
+<li><p>No personal data is stored or shared</p></li>
+<li><p>Analysis happens in real-time without saving images</p></li>
+<li><p>The extension only processes images you choose to analyze</p></li>
+</ul>
+</section>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h2>
+<p>Getting started is simple:</p>
+<ol class="arabic simple">
+<li><p><strong>Install the extension</strong> from the Chrome Web Store</p></li>
+<li><p><strong>Visit any webpage</strong> with images</p></li>
+<li><p><strong>Click the extension icon</strong></p></li>
+<li><p><strong>See instant results</strong> with AI/Real labels</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/getting-started.svg"><img alt="Step-by-step getting started guide" class="align-center" src="_images/getting-started.svg" style="width: 400px;" />
+</a>
+</section>
+<section id="the-future-of-image-verification">
+<h2>The Future of Image Verification<a class="headerlink" href="#the-future-of-image-verification" title="Link to this heading">¶</a></h2>
+<p>As AI technology evolves, tools like Image AI Detector will become increasingly important. We’re working on:</p>
+<ul class="simple">
+<li><p><strong>More accurate detection</strong> of the latest AI models</p></li>
+<li><p><strong>Video analysis</strong> capabilities</p></li>
+<li><p><strong>Batch processing</strong> for multiple images</p></li>
+<li><p><strong>Integration</strong> with other verification tools</p></li>
+</ul>
+<p>This project represents a step toward a more transparent and trustworthy digital world where users can make informed decisions about the content they consume and share.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Remember</strong>: While our tool is highly accurate, no AI detection system is perfect.
+Always use critical thinking and verify important information through multiple sources.</p>
+</div>
+</section>
+</section>
 
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="user-guide/installation.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Installation Guide</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="executive-summary.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Executive Summary</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -329,8 +469,35 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">About the Project</a><ul>
+<li><a class="reference internal" href="#what-is-image-ai-detector">What is Image AI Detector?</a></li>
+<li><a class="reference internal" href="#why-this-matters">Why This Matters</a></li>
+<li><a class="reference internal" href="#how-it-works">How It Works</a></li>
+<li><a class="reference internal" href="#key-features">Key Features</a></li>
+<li><a class="reference internal" href="#who-should-use-this">Who Should Use This?</a></li>
+<li><a class="reference internal" href="#technology-behind-the-scenes">Technology Behind the Scenes</a></li>
+<li><a class="reference internal" href="#privacy-security">Privacy &amp; Security</a></li>
+<li><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li><a class="reference internal" href="#the-future-of-image-verification">The Future of Image Verification</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
@@ -341,8 +508,5 @@
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=30646c52"></script>
-    
-<script src="_static/searchtools.js"></script>
-<script src="_static/language_data.js"></script>
-<script src="searchindex.js"></script></body>
+    </body>
 </html>

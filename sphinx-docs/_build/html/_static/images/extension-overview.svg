@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="browser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="extension" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ai" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="real" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="700" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b">Chrome Extension Overview</text>
+  
+  <!-- Browser Window -->
+  <rect x="50" y="60" width="600" height="300" rx="10" fill="url(#browser)" stroke="#1e40af" stroke-width="3"/>
+  
+  <!-- Browser Header -->
+  <rect x="50" y="60" width="600" height="40" rx="10" fill="#1e40af"/>
+  <text x="80" y="85" font-family="Arial, sans-serif" font-size="14" fill="white" font-weight="bold">Chrome Browser</text>
+  
+  <!-- Extension Icon in Toolbar -->
+  <rect x="500" y="70" width="30" height="30" rx="5" fill="url(#extension)" stroke="#047857" stroke-width="2"/>
+  <text x="515" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">AI</text>
+  
+  <!-- Web Page Content -->
+  <rect x="70" y="120" width="560" height="220" rx="5" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Page Title -->
+  <text x="350" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#1e293b" font-weight="bold">Example Web Page</text>
+  
+  <!-- Images on the page -->
+  <!-- Image 1 - AI Generated -->
+  <rect x="90" y="160" width="120" height="80" rx="5" fill="#fef2f2" stroke="#fecaca" stroke-width="2"/>
+  <text x="150" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#dc2626" font-weight="bold">🤖 AI Image</text>
+  
+  <!-- AI Label -->
+  <rect x="90" y="250" width="40" height="20" rx="10" fill="url(#ai)" stroke="#b91c1c" stroke-width="1"/>
+  <text x="110" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">AI</text>
+  <text x="140" y="263" font-family="Arial, sans-serif" font-size="10" fill="#64748b">92%</text>
+  
+  <!-- Image 2 - Real Photo -->
+  <rect x="230" y="160" width="120" height="80" rx="5" fill="#f0f9ff" stroke="#bae6fd" stroke-width="2"/>
+  <text x="290" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2563eb" font-weight="bold">📸 Real Photo</text>
+  
+  <!-- Real Label -->
+  <rect x="230" y="250" width="50" height="20" rx="10" fill="url(#real)" stroke="#6d28d9" stroke-width="1"/>
+  <text x="255" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">Real</text>
+  <text x="285" y="263" font-family="Arial, sans-serif" font-size="10" fill="#64748b">87%</text>
+  
+  <!-- Image 3 - AI Generated -->
+  <rect x="370" y="160" width="120" height="80" rx="5" fill="#fef2f2" stroke="#fecaca" stroke-width="2"/>
+  <text x="430" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#dc2626" font-weight="bold">🎨 AI Art</text>
+  
+  <!-- AI Label -->
+  <rect x="370" y="250" width="40" height="20" rx="10" fill="url(#ai)" stroke="#b91c1c" stroke-width="1"/>
+  <text x="390" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">AI</text>
+  <text x="420" y="263" font-family="Arial, sans-serif" font-size="10" fill="#64748b">95%</text>
+  
+  <!-- Image 4 - Real Photo -->
+  <rect x="510" y="160" width="120" height="80" rx="5" fill="#f0f9ff" stroke="#bae6fd" stroke-width="2"/>
+  <text x="570" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2563eb" font-weight="bold">📱 Real Photo</text>
+  
+  <!-- Real Label -->
+  <rect x="510" y="250" width="50" height="20" rx="10" fill="url(#real)" stroke="#6d28d9" stroke-width="1"/>
+  <text x="535" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">Real</text>
+  <text x="565" y="263" font-family="Arial, sans-serif" font-size="10" fill="#64748b">91%</text>
+  
+  <!-- Extension Popup -->
+  <rect x="450" y="80" width="200" height="120" rx="10" fill="white" stroke="#64748b" stroke-width="2"/>
+  <text x="550" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#475569" font-weight="bold">Extension Popup</text>
+  
+  <!-- Popup Content -->
+  <text x="460" y="125" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Images Analyzed: 4</text>
+  <text x="460" y="140" font-family="Arial, sans-serif" font-size="12" fill="#64748b">AI Detected: 2</text>
+  <text x="460" y="155" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Real Photos: 2</text>
+  <text x="460" y="170" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Avg Confidence: 91%</text>
+  
+  <!-- Arrow from extension to popup -->
+  <path d="M 530 70 L 530 80" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="380" width="600" height="20" rx="5" fill="#f1f5f9" stroke="#64748b" stroke-width="1"/>
+  <text x="350" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Real-time AI detection with visual overlays and confidence scores</text>
+</svg>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frontend" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="backend" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ml" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="external" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b">Technology Stack</text>
+  
+  <!-- Frontend Layer -->
+  <rect x="50" y="60" width="500" height="80" rx="10" fill="url(#frontend)" stroke="#1e40af" stroke-width="2"/>
+  <text x="300" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">Frontend Layer</text>
+  
+  <!-- Frontend Components -->
+  <rect x="80" y="100" width="100" height="30" rx="5" fill="white" stroke="#1e40af" stroke-width="1"/>
+  <text x="130" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" font-weight="bold">Chrome Extension</text>
+  
+  <rect x="200" y="100" width="100" height="30" rx="5" fill="white" stroke="#1e40af" stroke-width="1"/>
+  <text x="250" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" font-weight="bold">Content Script</text>
+  
+  <rect x="320" y="100" width="100" height="30" rx="5" fill="white" stroke="#1e40af" stroke-width="1"/>
+  <text x="370" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" font-weight="bold">Popup UI</text>
+  
+  <rect x="440" y="100" width="100" height="30" rx="5" fill="white" stroke="#1e40af" stroke-width="1"/>
+  <text x="490" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e40af" font-weight="bold">Options Page</text>
+  
+  <!-- Backend Layer -->
+  <rect x="50" y="160" width="500" height="80" rx="10" fill="url(#backend)" stroke="#047857" stroke-width="2"/>
+  <text x="300" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">Backend Layer</text>
+  
+  <!-- Backend Components -->
+  <rect x="80" y="200" width="100" height="30" rx="5" fill="white" stroke="#047857" stroke-width="1"/>
+  <text x="130" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#047857" font-weight="bold">Flask API</text>
+  
+  <rect x="200" y="200" width="100" height="30" rx="5" fill="white" stroke="#047857" stroke-width="1"/>
+  <text x="250" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#047857" font-weight="bold">Image Processing</text>
+  
+  <rect x="320" y="200" width="100" height="30" rx="5" fill="white" stroke="#047857" stroke-width="1"/>
+  <text x="370" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#047857" font-weight="bold">Caching System</text>
+  
+  <rect x="440" y="200" width="100" height="30" rx="5" fill="white" stroke="#047857" stroke-width="1"/>
+  <text x="490" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#047857" font-weight="bold">Error Handling</text>
+  
+  <!-- ML Layer -->
+  <rect x="50" y="260" width="500" height="80" rx="10" fill="url(#ml)" stroke="#b91c1c" stroke-width="2"/>
+  <text x="300" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">Machine Learning Layer</text>
+  
+  <!-- ML Components -->
+  <rect x="80" y="300" width="100" height="30" rx="5" fill="white" stroke="#b91c1c" stroke-width="1"/>
+  <text x="130" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#b91c1c" font-weight="bold">Computer Vision</text>
+  
+  <rect x="200" y="300" width="100" height="30" rx="5" fill="white" stroke="#b91c1c" stroke-width="1"/>
+  <text x="250" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#b91c1c" font-weight="bold">Pattern Recognition</text>
+  
+  <rect x="320" y="300" width="100" height="30" rx="5" fill="white" stroke="#b91c1c" stroke-width="1"/>
+  <text x="370" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#b91c1c" font-weight="bold">Confidence Scoring</text>
+  
+  <rect x="440" y="300" width="100" height="30" rx="5" fill="white" stroke="#b91c1c" stroke-width="1"/>
+  <text x="490" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#b91c1c" font-weight="bold">Heuristic Analysis</text>
+  
+  <!-- External Services -->
+  <rect x="50" y="360" width="500" height="30" rx="10" fill="url(#external)" stroke="#6d28d9" stroke-width="2"/>
+  <text x="300" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white" font-weight="bold">External Services: Hugging Face API, Image Analysis Models</text>
+</svg>

@@ -102,6 +102,14 @@ A Chrome extension that detects AI-generated images using state-of-the-art compu
 
 .. toctree::
    :maxdepth: 2
+   :caption: Overview
+   :hidden:
+
+   executive-summary
+   about-project
+
+.. toctree::
+   :maxdepth: 2
    :caption: User Guide
    :hidden:
 
@@ -161,6 +169,8 @@ A Chrome extension that detects AI-generated images using state-of-the-art compu
 
 **Quick Navigation:**
 
+- 📊 :doc:`executive-summary` - Business overview and technical architecture
+- ℹ️ :doc:`about-project` - Project overview for non-technical users
 - 🏗️ :doc:`technical/architecture` - Chrome extension components and system design
 - 🧠 :doc:`technical/ml-approach` - CLIP, Vision Transformers, and zero-shot classification  
 - 🚀 :doc:`technical/api-reference` - Complete API documentation with examples
