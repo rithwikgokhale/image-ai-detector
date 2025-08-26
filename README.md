@@ -9,8 +9,8 @@ This project includes a Chrome extension and a small local server that calls the
 - Non‑technical Guide: `docs/Guide-For-Non-Technical-Users.md`
 - Setup & Demo: `docs/Setup-and-Demo.md`
 - Architecture: `docs/Architecture.md`
-- API Spec: `docs/API-Spec.md`
-- ML Approach: `docs/ML-Approach.md`
+- API Spec (Hugging Face CLIP): `docs/API-Spec.md`
+- ML Approach (Computer Vision): `docs/ML-Approach.md`
 - FAQ: `docs/FAQ.md`
 - Roadmap: `docs/Roadmap.md`
 
