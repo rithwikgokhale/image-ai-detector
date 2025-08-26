@@ -2,12 +2,14 @@
   # Directory to publish (Sphinx builds to _build/html)
   publish = "sphinx-docs/_build/html"
   
-  # Build command
-  command = "pip install -r requirements-docs.txt && cd sphinx-docs && python3 -m sphinx -b html . _build/html"
+  # Build command - install dependencies and build docs
+  command = "python3 -m pip install --upgrade pip && python3 -m pip install -r requirements-docs.txt && cd sphinx-docs && python3 -m sphinx -b html . _build/html"
 
 [build.environment]
-  # Python version for Netlify
+  # Use Python 3.9 (specified in .python-version file)
   PYTHON_VERSION = "3.9"
+  # Ensure we use Python 3
+  NODE_VERSION = "18"
 
 # Redirect rules for clean URLs
 [[redirects]]
@@ -15,7 +17,7 @@
   to = "/:splat"
   status = 301
 
-# Headers for better performance
+# Headers for better performance and security
 [[headers]]
   for = "/*"
   [headers.values]
