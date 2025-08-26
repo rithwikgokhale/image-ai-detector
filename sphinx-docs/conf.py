@@ -54,16 +54,25 @@ html_title = f"{project} Documentation"
 # Furo theme options
 html_theme_options = {
     "sidebar_hide_name": True,
-    "light_logo": "logo-light.svg",
-    "dark_logo": "logo-dark.svg",
+    "light_logo": "logo.png",
+    "dark_logo": "logo.png",
+    "dark_mode_code_blocks": True,
     "light_css_variables": {
         "color-brand-primary": "#2563eb",
         "color-brand-content": "#2563eb",
         "color-admonition-background": "transparent",
     },
     "dark_css_variables": {
-        "color-brand-primary": "#7c3aed",
-        "color-brand-content": "#7c3aed",
+        "color-brand-primary": "#2563eb",
+        "color-brand-content": "#2563eb",
+        "color-background-primary": "#0f172a",
+        "color-background-secondary": "#1e293b",
+        "color-background-hover": "#334155",
+        "color-background-border": "#475569",
+        "color-foreground-primary": "#f8fafc",
+        "color-foreground-secondary": "#e2e8f0",
+        "color-foreground-muted": "#94a3b8",
+        "color-foreground-border": "#64748b",
     },
     "footer_icons": [
         {
