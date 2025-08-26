@@ -1,77 +1,111 @@
-# Image AI Detector (Chrome Extension)
+# 🤖 Image AI Detector
 
-Label the images you see on any webpage as “AI-generated” or “Real,” with a confidence score.
+> **Real-time AI-generated image detection for the web** - A Chrome extension that instantly analyzes images on any webpage to distinguish between authentic photographs and AI-generated content.
 
-This project includes a Chrome extension and a small local server that calls the Hugging Face Inference API. It is designed to be easy to run for non-technical users and easy to extend for developers.
+[![GitHub Stars](https://img.shields.io/github/stars/rithwikgokhale/image-ai-detector?style=social)](https://github.com/rithwikgokhale/image-ai-detector)
+[![License](https://img.shields.io/github/license/rithwikgokhale/image-ai-detector)](https://github.com/rithwikgokhale/image-ai-detector/blob/main/LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
 
-## Quick Links
-- Executive Summary: `docs/Executive-Summary.md`
-- Non‑technical Guide: `docs/Guide-For-Non-Technical-Users.md`
-- Setup & Demo: `docs/Setup-and-Demo.md`
-- Architecture: `docs/Architecture.md`
-- API Spec (Hugging Face CLIP): `docs/API-Spec.md`
-- ML Approach (Computer Vision): `docs/ML-Approach.md`
-- FAQ: `docs/FAQ.md`
-- Roadmap: `docs/Roadmap.md`
+## 🎯 What It Does
 
-## What It Does
-- One‑click analysis from the popup
-- Finds visible images and overlays badges with a label and confidence
-- Pluggable backend: a local Flask server that talks to Hugging Face
-- Graceful timeouts so overlays don’t “hang” if the network is slow
+In today's digital world, **AI-generated images** are becoming increasingly sophisticated and widespread. This Chrome extension helps you:
 
-## How It Works (at a glance)
-- You click the extension → it scans visible images on the page
-- For each image, the extension asks the local server to classify it
-- The server downloads the image and sends it to a Hugging Face model
-- The extension overlays the result as a small badge on the image
+- 🔍 **Detect AI-generated images** on any webpage instantly
+- 📊 **Get confidence scores** for each classification
+- 🎨 **See visual overlays** directly on images
+- 🛡️ **Make informed decisions** about content authenticity
 
-## Quickstart (macOS)
-1) Install Python 3.9+.
-2) Run the local server:
+## ✨ Key Features
+
+- 🧠 **State-of-the-Art ML**: Uses CLIP (Contrastive Language-Image Pretraining) with Vision Transformers
+- ⚡ **Real-Time Analysis**: Instant results as you browse
+- 🔄 **Zero-Shot Classification**: Works with any AI generator without retraining
+- 🎨 **Visual Overlays**: Clear badges and confidence scores on images
+- 🛡️ **Privacy-First**: Local processing where possible, secure API communication
+- 📱 **Easy to Use**: One-click activation, no technical knowledge required
+
+## 🚀 Quick Start
+
+### 1. Install Dependencies
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+git clone https://github.com/rithwikgokhale/image-ai-detector.git
+cd image-ai-detector
 pip install -r requirements.txt
-export HF_API_KEY="<your_hugging_face_token>"
+```
+
+### 2. Set Up API Key
+```bash
+export HF_API_KEY="your_hugging_face_token_here"
+```
+
+### 3. Start the Server
+```bash
 python3 simple_ai_detector.py
-# Server runs at http://localhost:5001
-```
-3) Load the extension:
-- Open `chrome://extensions/` → enable Developer mode → Load unpacked → choose this folder
-- Click the extension, then “Settings,” and set the API URL to:
-  `http://localhost:5001/classify`
-4) Visit any page with images and click “Analyze visible images.”
-
-Troubleshooting? See `docs/FAQ.md` and the “Troubleshooting” section in `docs/Setup-and-Demo.md`.
-
-## Requirements
-- Extension: modern Chrome (Manifest V3)
-- Local server: Python 3.9+, `pip install -r requirements.txt`
-- Hugging Face token: create one in your HF account and set `HF_API_KEY`
-
-## Repo Structure
-```
-ML Chrome Extension/
-  manifest.json
-  background.js
-  content-script.js
-  content-style.css
-  popup.html
-  popup.js
-  options.html
-  options.js
-  simple_ai_detector.py      # Local Flask server (default)
-  test_api.py                # Quick health/classify tests
-  requirements.txt           # Minimal deps for the local server
-  requirements-ml.txt        # Optional deps for example ML training server
-  ml_model_example.py        # Example ML server (optional/demo)
-  train_model.py             # Example training script (optional/demo)
-  docs/
 ```
 
-## Contributing
-See `CONTRIBUTING.md` for guidelines. Issues and pull requests are welcome.
+### 4. Load Extension
+- Open `chrome://extensions/` in Chrome
+- Enable "Developer mode"
+- Click "Load unpacked" and select the project folder
+- Visit any webpage with images and click the extension icon
 
-## License
-MIT – see `LICENSE`.
+## 📊 Example Results
+
+```json
+{
+  "label": "ai",
+  "confidence": 0.87,
+  "source": "image_analysis_heuristic",
+  "analysis": "Size: 800x600 (480,000px), Aspect: 1.33"
+}
+```
+
+## 🏗️ Technology Stack
+
+- **Frontend**: Chrome Extension (JavaScript, Manifest V3)
+- **Backend**: Flask API (Python)
+- **ML Engine**: Hugging Face Transformers
+- **Image Processing**: PIL/Pillow
+- **Analysis**: Computer Vision & Pattern Recognition
+
+## 📚 Documentation
+
+📖 **Complete documentation**: [View Documentation](https://your-netlify-site.netlify.app)
+
+- 📊 [Executive Summary](https://your-netlify-site.netlify.app/executive-summary.html) - Business overview
+- ℹ️ [About Project](https://your-netlify-site.netlify.app/about-project.html) - Non-technical guide
+- 🏗️ [Technical Architecture](https://your-netlify-site.netlify.app/technical/architecture.html) - System design
+- 🧠 [ML Approach](https://your-netlify-site.netlify.app/technical/ml-approach.html) - Computer vision details
+
+## 🎯 Use Cases
+
+- **Content Creators**: Verify image authenticity before sharing
+- **Journalists**: Fact-check visual content
+- **Educators**: Teach digital literacy and media awareness
+- **Social Media Users**: Make informed decisions about what to share
+- **Business Professionals**: Ensure marketing materials are authentic
+
+## 🔧 API Usage
+
+```python
+import requests
+
+response = requests.post(
+    "http://localhost:5001/classify",
+    json={"imageUrl": "https://example.com/image.jpg"}
+)
+result = response.json()
+print(f"Classification: {result['label']} (Confidence: {result['confidence']:.2%})")
+```
+
+## 🤝 Contributing
+
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+**Built with ❤️ for a more transparent digital world**
