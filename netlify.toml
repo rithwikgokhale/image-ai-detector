@@ -1,0 +1,51 @@
+[build]
+  # Directory to publish (Sphinx builds to _build/html)
+  publish = "sphinx-docs/_build/html"
+  
+  # Build command
+  command = "pip install -r requirements-docs.txt && cd sphinx-docs && python3 -m sphinx -b html . _build/html"
+
+[build.environment]
+  # Python version for Netlify
+  PYTHON_VERSION = "3.9"
+
+# Redirect rules for clean URLs
+[[redirects]]
+  from = "/docs/*"
+  to = "/:splat"
+  status = 301
+
+# Headers for better performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# Custom 404 page
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
